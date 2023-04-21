@@ -1,60 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap&_v=20230419081515"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?_v=20230419081515">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap&_v=20230421071758"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230421071758">
 
-  <title>Главная</title>
+	<title>Главная</title>
 </head>
 
 <body>
-  <header class="header">
-    <section class="header__top">
-      <div class="container">
-        <div class="top__content">
-          <div class="top__location">
-            <svg class="icons__location">
-              <use xlink:href="./img/icons/icons.svg#location" />
-            </svg>
-            ТЦ Горбушка, г. Москва, ул. Барклая, 8
-          </div>
-          <nav class="top__menu">
-            <ul class="top__list">
-              <li class="top__item"><a href="#" class="menu__link top__link">О компании</a></li>
-              <li class="top__item"><a href="#" class="top__link">Доставка и оплата</a></li>
-              <li class="top__item"><a href="#" class="top__link">Обмен и возврат</a></li>
-              <li class="top__item"><a href="#" class="top__link">Гарантия и сервис</a></li>
-              <li class="top__item"><a href="#" class="top__link">Контакты</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </section>
+	<header class="header">
+  <div class="header__burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <section class="header__top">
     <div class="container">
-      <div class="header__inner">
-        <a class="header__logo" href="#">
-          <picture>
-            <source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo">
-          </picture>
-        </a>
-        <div class="header__content">
-          <section class="header__middle">
-            <form class="middle__search" action="#">
-              <input class="search__input" type="text" placeholder="Поиск">
-              <button class="search__btn main-btn pointer">
-                <svg class="">
-                  <use xlink:href="./img/icons/icons.svg#search" />
-                </svg>Найти</button>
-            </form>
-            <div class="middle__social ">
+      <div class="top__content">
+        <div class="top__location">
+          <svg class="icons__location">
+            <use xlink:href="/img/icons/icons.svg#location" />
+          </svg>
+          ТЦ Горбушка, г. Москва, ул. Барклая, 8
+        </div>
+        <nav class="top__menu">
+          <ul class="top__list">
+            <li class="top__item"><a href="#" class="menu__link top__link">О компании</a></li>
+            <li class="top__item"><a href="#" class="top__link">Доставка и оплата</a></li>
+            <li class="top__item"><a href="#" class="top__link">Обмен и возврат</a></li>
+            <li class="top__item"><a href="#" class="top__link">Гарантия и сервис</a></li>
+            <li class="top__item"><a href="#" class="top__link">Контакты</a></li>
+            <li class="top__item top__icons">
               <a href="#"><svg class="pointer">
                   <use xlink:href="./img/icons/icons.svg#tg" />
                 </svg>
@@ -64,133 +47,162 @@
                   <use xlink:href="./img/icons/icons.svg#ws" />
                 </svg>
               </a>
-            </div>
-            <div class="middle__phone pointer">
+            </li>
+            <li class="top__item pointer top__phone">
               <svg class="">
                 <use xlink:href="./img/icons/icons.svg#phone" />
               </svg>
               <a href="tel:+7(916)8423430">+7 (916) 842-34-30</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <div class="header__inner">
+      <a class="header__logo" href="#"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo"></picture></a>
+      <div class="header__content">
+        <section class="header__middle">
+          <form class="middle__search" action="#">
+            <input class="search__input" type="text" placeholder="Поиск">
+            <button class="search__btn main-btn pointer">
+              <svg class="">
+                <use xlink:href="./img/icons/icons.svg#search" />
+              </svg>Найти</button>
+          </form>
+          <div class="middle__social ">
+            <a href="#"><svg class="pointer">
+                <use xlink:href="./img/icons/icons.svg#tg" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="pointer">
+                <use xlink:href="./img/icons/icons.svg#ws" />
+              </svg>
+            </a>
+          </div>
+          <div class="middle__phone pointer">
+            <svg class="">
+              <use xlink:href="./img/icons/icons.svg#phone" />
+            </svg>
+            <a href="tel:+7(916)8423430">+7 (916) 842-34-30</a>
+          </div>
+          <div class="middle__add">
+            <div class="add__comparison pointer">
+              <svg class="">
+                <use xlink:href="./img/icons/icons.svg#comparison" />
+              </svg>
+              <span class="add__number">0</span>
             </div>
-            <div class="middle__add">
-              <div class="add__comparison pointer">
-                <svg class="">
-                  <use xlink:href="./img/icons/icons.svg#comparison" />
-                </svg>
-                <span class="add__number">0</span>
-              </div>
-              <div class="add__cart pointer">
-                <svg class="">
-                  <use xlink:href="./img/icons/icons.svg#heart" />
-                </svg>
-                <span class="add__number">0</span>
-              </div>
+            <div class="add__cart pointer">
+              <svg class="">
+                <use xlink:href="./img/icons/icons.svg#heart" />
+              </svg>
+              <span class="add__number">0</span>
             </div>
-          </section>
-          <section class="header__bottom">
-            <nav class="bottom__menu">
-              <ul class="bottom__list">
-                <li class="bottom__item main-btn bottom__btn pointer">
+          </div>
+        </section>
+        <!-- <section class="header__bottom">
+          <nav class="bottom__menu">
+            <ul class="bottom__list">
+              <li class="bottom__item main-btn bottom__btn pointer">
+                <svg class="">
+                  <use xlink:href="./img/icons/icons.svg#burger" />
+                </svg>
+                Каталог
+              </li>
+              <li class="bottom__item pointer"><a href="#">iPhone 14 Pro Макс 256</a></li>
+              <li class="bottom__item pointer"><a href="#">Apple TV 4K 2022</a></li>
+              <li class="bottom__item pointer"><a href="#">Apple Watch Series Ultra</a></li>
+              <li class="bottom__item pointer"><a href="#">MacBook Pro 14 M2</a></li>
+              <li class="bottom__item pointer"><a href="#">iPad Pro M2</a></li>
+            </ul>
+          </nav>
+        </section> -->
+      </div>
+    </div>
+  </div>
+</header>
+	<div class="wrapper">
+		<main class="main">
+
+		</main>
+		<footer class="footer">
+
+  <section class="footer__top">
+    <div class="container">
+      <div class="footer__content">
+        <div class="top__logo">
+          <picture><source srcset="img/footer-logo.webp" type="image/webp"><img src="img/footer-logo.png" alt="logo"></picture>
+        </div>
+        <nav class="top__nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#">О компании</a></li>
+            <li class="nav__item"><a href="#">Доставка и оплата</a></li>
+            <li class="nav__item"><a href="#">Обмен и возврат</a></li>
+          </ul>
+        </nav>
+        <nav class="top__nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#">Гарантия и сервис</a></li>
+            <li class="nav__item"><a href="#">Контакты</a></li>
+            <li class="nav__item"><a href="#">Каталог</a></li>
+          </ul>
+        </nav>
+        <nav class="top__nav">
+          <ul class="nav__list">
+            <li class="nav__item nav__item-circle">ТЦ Горбушка, г.<br> Москва, ул. Барклая, 8</li>
+            <li class="nav__item nav__item-circle">10:00 — 21:00 без выходных</li>
+          </ul>
+        </nav>
+        <nav class="top__nav">
+          <ul class="nav__list">
+            <li class="nav__item nav__phone"><a href="tel:+7(916)8423430">
+                <svg class="">
+                  <use xlink:href="./img/icons/icons.svg#phone" />
+                </svg>
+                +7 (916) 842-34-30
+              </a></li>
+            <li class="nav__item"><a href="#mail">gorbushka-moscow@yandex.ru</a></li>
+            <li class="nav__item">
+              <div class="item__tg pointer">
+                <a href="#">
                   <svg class="">
-                    <use xlink:href="./img/icons/icons.svg#burger" />
+                    <use xlink:href="./img/icons/icons.svg#tg" />
                   </svg>
-                  Каталог
-                </li>
-                <li class="bottom__item pointer"><a href="#">iPhone 14 Pro Макс 256</a></li>
-                <li class="bottom__item pointer"><a href="#">Apple TV 4K 2022</a></li>
-                <li class="bottom__item pointer"><a href="#">Apple Watch Series Ultra</a></li>
-                <li class="bottom__item pointer"><a href="#">MacBook Pro 14 M2</a></li>
-                <li class="bottom__item pointer"><a href="#">iPad Pro M2</a></li>
-              </ul>
-            </nav>
-          </section>
+                </a>
+              </div>
+              <div class="item__ws pointer">
+                <a href="#">
+                  <svg class="">
+                    <use xlink:href="./img/icons/icons.svg#ws" />
+                  </svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+  </section>
+  <section class="footer__bottom">
+    <div class="container">
+      <div class="bottom__content">
+        <div class="bottom__info">
+          <p class="bottom__copyright">© 2023 gorbushka-moscow</p>
+          <p class="bottom__policy">Политика конфиденциальности</p>
+        </div>
+        <div class="bottom__pr">
+          <picture><source srcset="img/brands/layout-site.webp" type="image/webp"><img src="img/brands/layout-site.png" alt="layout-site"></picture>
+          <p class="bottom__name">Разработка сайта <br>Студия «СТРОИМ САЙТ»</p>
         </div>
       </div>
     </div>
-  </header>
-  <div class="wrapper">
-    <main class="main">
-
-    </main>
-    <footer class="footer">
-
-      <section class="footer__top">
-        <div class="container">
-          <div class="footer__content">
-            <div class="top__logo">
-              <picture>
-                <source srcset="img/footer-logo.webp" type="image/webp"><img src="img/footer-logo.png" alt="logo">
-              </picture>
-            </div>
-            <nav class="top__nav">
-              <ul class="nav__list">
-                <li class="nav__item"><a href="#">О компании</a></li>
-                <li class="nav__item"><a href="#">Доставка и оплата</a></li>
-                <li class="nav__item"><a href="#">Обмен и возврат</a></li>
-              </ul>
-            </nav>
-            <nav class="top__nav">
-              <ul class="nav__list">
-                <li class="nav__item"><a href="#">Гарантия и сервис</a></li>
-                <li class="nav__item"><a href="#">Контакты</a></li>
-                <li class="nav__item"><a href="#">Каталог</a></li>
-              </ul>
-            </nav>
-            <nav class="top__nav">
-              <ul class="nav__list">
-                <li class="nav__item nav__item-circle">ТЦ Горбушка, г.<br> Москва, ул. Барклая, 8</li>
-                <li class="nav__item nav__item-circle">10:00 — 21:00 без выходных</li>
-              </ul>
-            </nav>
-            <nav class="top__nav">
-              <ul class="nav__list">
-                <li class="nav__item nav__phone"><a href="tel:+7(916)8423430">
-                    <svg class="">
-                      <use xlink:href="./img/icons/icons.svg#phone" />
-                    </svg>
-                    +7 (916) 842-34-30
-                  </a></li>
-                <li class="nav__item"><a href="#mail">gorbushka-moscow@yandex.ru</a></li>
-                <li class="nav__item">
-                  <div class="item__tg pointer">
-                    <a href="#">
-                      <svg class="">
-                        <use xlink:href="./img/icons/icons.svg#tg" />
-                      </svg>
-                    </a>
-                  </div>
-                  <div class="item__ws pointer">
-                    <a href="#">
-                      <svg class="">
-                        <use xlink:href="./img/icons/icons.svg#ws" />
-                      </svg>
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </nav>
-          </div>
-      </section>
-      <section class="footer__bottom">
-        <div class="container">
-          <div class="bottom__content">
-            <div class="bottom__info">
-              <p class="bottom__copyright">© 2023 gorbushka-moscow</p>
-              <p class="bottom__policy">Политика конфиденциальности</p>
-            </div>
-            <div class="bottom__pr">
-              <picture>
-                <source srcset="img/brands/layout-site.webp" type="image/webp"><img src="img/brands/layout-site.png"
-                  alt="layout-site">
-              </picture>
-              <p class="bottom__name">Разработка сайта <br>Студия «СТРОИМ САЙТ»</p>
-            </div>
-          </div>
-        </div>
-      </section>
+  </section>
   </div>
-  </footer>
-  </div>
-  <script src="js/app.min.js?_v=20230419081515"></script>
+</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230421071758"></script>
 </body>
 
 </html>
