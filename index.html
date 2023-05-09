@@ -7,9 +7,9 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
-		href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap&_v=20230504035935"
+		href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap&_v=20230509102721"
 		rel="stylesheet">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230504035935">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230509102721">
 
 	<title>Главная</title>
 </head>
@@ -104,25 +104,22 @@
           </div>
         </section>
         <section class="header__bottom">
-          <nav class="bottom__menu">
-            <ul class="bottom__list">
-              <li class="bottom__item main-btn bottom__btn pointer">
-                <svg class="">
-                  <use xlink:href="./img/icons/icons.svg#burger" />
-                </svg>
-                Каталог
-              </li>
-              <div class="bottom__nav">
-                <li class="bottom__item pointer"><a href="#">iPhone 14 Pro Макс 256</a>
-                </li>
-                <li class="bottom__item pointer"><a href="#">Apple TV 4K 2022</a></li>
-                <li class="bottom__item pointer"><a href="#">Apple Watch Series Ultra</a>
-                </li>
-                <li class="bottom__item pointer"><a href="#">MacBook Pro 14 M2</a></li>
-                <li class="bottom__item pointer"><a href="#">iPad Pro M2</a></li>
-              </div>
-            </ul>
-          </nav>
+          <div class="bottom__btn-catalog main-btn">
+            Каталог
+            <svg class="">
+              <use xlink:href="/img/icons/icons.svg#burger" />
+            </svg>
+          </div>
+          <div class="bottom__slider swiper">
+            <div class="slider__wrapper swiper-wrapper">
+              <div class="slider__item swiper-slide">iPhone 14 Pro Макс 256</div>
+              <div class="slider__item swiper-slide">Apple TV 4K 2022</div>
+              <div class="slider__item swiper-slide">MacBook Pro 14 M2</div>
+              <div class="slider__item swiper-slide">Apple Watch Series Ultra</div>
+              <div class="slider__item swiper-slide">Apple TV 4K 2022</div>
+              <div class="slider__item swiper-slide">Apple TV 4K 2022</div>
+            </div>
+          </div>
         </section>
       </div>
     </div>
@@ -206,7 +203,7 @@
   </div>
 </footer>
 	</div>
-	<script src="js/app.min.js?_v=20230504035935"></script>
+	<script src="js/app.min.js?_v=20230509102721"></script>
 </body>
 
 </html>
