@@ -715,6 +715,31 @@ button::-moz-focus-inner {
   color: var(--cardDarkColor);
 }
 
+:root {
+  --black: #000000;
+  --white: #FFFFFF;
+  --darkYellow: #5B5729;
+  --darkGreen: #3E4D31;
+  --forestGreen: #063500;
+  --cardDarkColor: #262626;
+  --grey: #909090;
+  --lightGrey: #7E7E7E;
+  --swiper-navigation-size: 17px !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.main-btn {
+  background-color: var(--darkGreen);
+  line-height: 19px;
+  padding: 13px 16px 11px 25px;
+  color: var(--white);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
 /* at-class */
 
 .comparison {
@@ -742,31 +767,6 @@ button::-moz-focus-inner {
 
 .case-image {
   height: 150px;
-}
-
-:root {
-  --black: #000000;
-  --white: #FFFFFF;
-  --darkYellow: #5B5729;
-  --darkGreen: #3E4D31;
-  --forestGreen: #063500;
-  --cardDarkColor: #262626;
-  --grey: #909090;
-  --lightGrey: #7E7E7E;
-  --swiper-navigation-size: 17px !important;
-}
-
-.pointer {
-  cursor: pointer;
-}
-
-.main-btn {
-  background-color: var(--darkGreen);
-  line-height: 19px;
-  padding: 13px 16px 11px 25px;
-  color: var(--white);
-  border-radius: 7px;
-  cursor: pointer;
 }
 
 /**
