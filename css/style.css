@@ -2696,8 +2696,8 @@ body {
     display: grid;
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
-    -ms-grid-rows: (120px)[2];
-    grid-template-rows: repeat(2, 120px);
+    -ms-grid-rows: (1fr)[1];
+    grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
   }
@@ -2705,11 +2705,13 @@ body {
   .card-properties__phone img {
     width: 110px;
     height: 100px;
+    margin: 15px -15px 15px 0;
   }
 
   .card-properties__tablet img {
     width: 80px;
     height: 90px;
+    margin: 15px 0 15px 0;
   }
 
   .card-properties__notebook img {
@@ -2733,7 +2735,7 @@ body {
   .card-properties__accessories img {
     width: 75px;
     height: 90px;
-    margin: 10px 0 10px 0;
+    margin: 15px 0 15px 0;
   }
 }
 
