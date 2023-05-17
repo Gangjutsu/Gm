@@ -715,6 +715,117 @@ button::-moz-focus-inner {
   color: var(--cardDarkColor);
 }
 
+.section__categories {
+  margin: 30px 0 0 0;
+}
+
+.categories__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (159px)[2];
+  grid-template-rows: repeat(2, 159px);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.categories__card {
+  border-radius: 6px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.categories__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.card__name {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 15px;
+  color: var(--cardDarkColor);
+  margin: 85px 0 0 18px;
+}
+
+.card__image {
+  margin: 0 10px 0 0;
+}
+
+.card-properties__phone {
+  background-color: #E6EBE6;
+}
+
+.card-properties__phone img {
+  width: 150px;
+  height: 150px;
+  margin: 0 -20px 0 0;
+}
+
+.card-properties__tablet {
+  background-color: #D2E5D2;
+}
+
+.card-properties__tablet img {
+  width: 120px;
+  height: 150px;
+}
+
+.card-properties__notebook {
+  background-color: #D2D2E5;
+}
+
+.card-properties__notebook img {
+  width: 180px;
+  height: 120px;
+  margin: 0 -5px 0 0;
+}
+
+.card-properties__headphones {
+  background-color: #DDDCD2;
+}
+
+.card-properties__headphones img {
+  width: 120px;
+  height: 120px;
+}
+
+.card-properties__watch {
+  background-color: #EEE0E0;
+}
+
+.card-properties__watch img {
+  width: 140px;
+  height: 150px;
+  margin: 0 -10px 0 0;
+}
+
+.card-properties__accessories {
+  background-color: #D2DDE5;
+}
+
+.card-properties__accessories img {
+  width: 110px;
+  height: 140px;
+}
+
 :root {
   --black: #000000;
   --white: #FFFFFF;
@@ -2049,7 +2160,7 @@ body {
   }
 
   .slider__pagination {
-    bottom: 90px !important;
+    bottom: 25px !important;
   }
 
   /* footer */
@@ -2096,6 +2207,10 @@ body {
   }
 
   /* title */
+
+  .section__slider {
+    height: 310px !important;
+  }
 
   .section__carousel {
     width: 301px !important;
@@ -2170,6 +2285,62 @@ body {
 
   .bottom__button {
     margin: 0 10px 0 0;
+  }
+
+  /* cards */
+
+  .section__categories {
+    margin: 0;
+  }
+
+  .categories__content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (149px)[2];
+    grid-template-rows: repeat(2, 149px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  .card__name {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 15px;
+    color: var(--cardDarkColor);
+    margin: 65px 0 0 10px;
+  }
+
+  .card-properties__phone img {
+    width: 130px;
+    height: 125px;
+  }
+
+  .card-properties__tablet img {
+    width: 100px;
+    height: 120px;
+  }
+
+  .card-properties__notebook img {
+    width: 140px;
+    height: 90px;
+  }
+
+  .card-properties__headphones img {
+    width: 100px;
+    height: 120px;
+  }
+
+  .card-properties__watch img {
+    width: 120px;
+    height: 130px;
+  }
+
+  .card-properties__accessories img {
+    width: 90px;
+    height: 120px;
   }
 }
 
@@ -2287,6 +2458,23 @@ body {
 
   .prices__new-price {
     font-size: 19px;
+  }
+
+  /* cards */
+
+  .section__categories {
+    margin: 20px 0 0 0;
+  }
+
+  .categories__content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (149px)[2];
+    grid-template-rows: repeat(2, 149px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
   }
 }
 
@@ -2499,6 +2687,53 @@ body {
   .section__carousel {
     width: 73% !important;
     margin: 0 auto;
+  }
+
+  /* cards */
+
+  .categories__content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (120px)[2];
+    grid-template-rows: repeat(2, 120px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .card-properties__phone img {
+    width: 110px;
+    height: 100px;
+  }
+
+  .card-properties__tablet img {
+    width: 80px;
+    height: 90px;
+  }
+
+  .card-properties__notebook img {
+    width: 120px;
+    height: 70px;
+    margin: 25px -10px 20px 0;
+  }
+
+  .card-properties__headphones img {
+    width: 90px;
+    height: 90px;
+    margin: 15px 0 15px 0;
+  }
+
+  .card-properties__watch img {
+    width: 90px;
+    height: 100px;
+    margin: 10px 0 10px 0;
+  }
+
+  .card-properties__accessories img {
+    width: 75px;
+    height: 90px;
+    margin: 10px 0 10px 0;
   }
 }
 
